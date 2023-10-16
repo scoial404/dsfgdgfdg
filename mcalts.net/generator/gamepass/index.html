@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PB2XEKWSEG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-PB2XEKWSEG');
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Generate Minecraft accounts with Xbox Game Pass through our Gamepass Generator. These accounts have access to 500+ games, including all Minecraft versions.">
+    <meta name="keywords" content="Minecraft, Xbox Game Pass, Minecraft Account Generator, Minecraft Gamepass Accounts, Minecraft Alts, McAlts">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Minecraft Gamepass Account Generator - McAlts">
+    <meta property="og:description" content="Generate Minecraft accounts with Xbox Game Pass through our Gamepass Generator. These accounts have access to 500+ games, including all Minecraft versions.">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/generator.css?kekw=3747dfsddf">
+    <link rel="stylesheet" href="/src/css/free.css?kekw=74747dsfdfdfsd">
+    <link rel="icon" type="image/x-icon" href="/src/img/icon.ico">
+    <title>Generate XBox Gamepass for Free - McAlts</title>
+</head>
+
+<body>
+    <div id="alert-area" class="alert-area"></div>
+    <div id="loader">
+        <div class="lds-grid">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div id="cookiePopup" class="hide">
+        <div class="cookieContent">
+            <p>
+                Our website uses cookies by the way.<br>By using McAlts, you agree & accept of our <a href="/privacy-policy">Privacy Policy</a> and <a href="/terms-of-service">ToS</a>
+            </p>
+            <button id="acceptCookie">Accept</button>
+        </div>
+        <img src="/src/img/cookie.webp" />
+    </div>
+    <div id="popup">
+        <div class="popup-content">
+            <div class="top">
+                <div class="popup-header">
+                    <h3>Pro is required</h3>
+                    <p>You need Pro in order to access this generator! But no worries, Pro is 100% Free. Do you want to get Pro now? </p>
+                </div>
+            </div>
+            <div class="popup-buttons">
+                <a href="/pro" id="leave">Get Pro</a>
+                <p>- OR -</p>
+                <a href="/generator" id="cancel">Go Back</a>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container flex-between">
+            <div class="logo">
+                <a href="/">
+<img alt="Free Minecraft Account Generator Icon" src="/src/img/icon.webp"> McAlts.net
+</a>
+            </div>
+            <nav class="main-navgation flex-between flex-ver-top">
+                <div></div>
+                <div class="nav-links">
+                    <a href="/">Home</a>
+                    <div class="dropdown">
+                        <a href="/generator">Generators<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" fill="currentColor" /></svg></a>
+                        <div class="dropdown-content">
+                            <a href="/generator/free"><img alt="Free Account Generator Icon" src="/src/img/copper.webp">Free</a>
+                            <a href="/generator/premium"><img alt="Premium Account Generator Icon" src="/src/img/iron.webp">Premium</a>
+                            <a href="/generator/gamepass"><img alt="Gamepass Account Generator Icon" src="/src/img/gold.webp">Gamepass</a>
+                        </div>
+                    </div>
+                    <a href="/full-access">Full Access</a>
+                </div>
+                <div class="nav-buttons">
+                    <span class="mode" id="mode"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 384 512"><path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z" fill="currentColor" /></svg></span>
+                    <a href="/pro" class="sign-up btn btn-sm btn-blue pro">Pro</a>
+                </div>
+            </nav>
+            <div class="burger-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon"><path id="burger" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" color="currentColor" /></svg>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="free" id="free">
+            <div class="container">
+                <div class="section-header section-header-gen">
+                    <a href="/generator">
+<svg xmlns="http://www.w3.org/2000/svg" class="arrow-svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" fill="currentColor" /></svg>
+</a>
+                    <div>
+                        <h1 class="section-title">Gamepass Account Generator</h1>
+                        <p class="section-description">Generate xbox gamepass using our gamepass generator.</p>
+                    </div>
+                </div>
+                <div class="generator-content" id="generator-content">
+                    <div class="generator">
+                        <div class="genContent">
+                            <div class="top-gen">
+                                <div class="credentials">
+                                    <div class="credential">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="currentColor"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" /></svg>
+                                        <div>
+                                            <span class="floating-label">Username</span>
+                                            <input type="text" name="username" id="username" class="inputText" placeholder="--Generate first--" readonly filled="false" value>
+                                        </div>
+                                        <svg class="copy" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="currentColor"><path d="M384 336H192c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16l140.1 0L400 115.9V320c0 8.8-7.2 16-16 16zM192 384H384c35.3 0 64-28.7 64-64V115.9c0-12.7-5.1-24.9-14.1-33.9L366.1 14.1c-9-9-21.2-14.1-33.9-14.1H192c-35.3 0-64 28.7-64 64V320c0 35.3 28.7 64 64 64zM64 128c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H256c35.3 0 64-28.7 64-64V416H272v32c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192c0-8.8 7.2-16 16-16H96V128H64z" /></svg>
+                                    </div>
+                                    <div class="credential">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="currentColor"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" /></svg>
+                                        <div>
+                                            <span class="floating-label">Email</span>
+                                            <input type="text" name="email" id="email" class="inputText" placeholder="--Generate first--" readonly filled="false" filled="false" value>
+                                        </div>
+                                        <svg class="copy" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="currentColor"><path d="M384 336H192c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16l140.1 0L400 115.9V320c0 8.8-7.2 16-16 16zM192 384H384c35.3 0 64-28.7 64-64V115.9c0-12.7-5.1-24.9-14.1-33.9L366.1 14.1c-9-9-21.2-14.1-33.9-14.1H192c-35.3 0-64 28.7-64 64V320c0 35.3 28.7 64 64 64zM64 128c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H256c35.3 0 64-28.7 64-64V416H272v32c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192c0-8.8 7.2-16 16-16H96V128H64z" /></svg>
+                                    </div>
+                                    <div class="credential">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="currentColor"><path d="M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17v80c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24V448h40c13.3 0 24-10.7 24-24V384h40c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zM376 96a40 40 0 1 1 0 80 40 40 0 1 1 0-80z" /></svg>
+                                        <div>
+                                            <span class="floating-label">Password</span>
+                                            <input type="text" name="password" id="password" class="inputText" placeholder="--Generate first--" readonly filled="false" value>
+                                        </div>
+                                        <svg class="copy" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="currentColor"><path d="M384 336H192c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16l140.1 0L400 115.9V320c0 8.8-7.2 16-16 16zM192 384H384c35.3 0 64-28.7 64-64V115.9c0-12.7-5.1-24.9-14.1-33.9L366.1 14.1c-9-9-21.2-14.1-33.9-14.1H192c-35.3 0-64 28.7-64 64V320c0 35.3 28.7 64 64 64zM64 128c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H256c35.3 0 64-28.7 64-64V416H272v32c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192c0-8.8 7.2-16 16-16H96V128H64z" /></svg>
+                                    </div>
+                                    <div class="credential">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="currentColor"><path d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z" /></svg>
+                                        <div>
+                                            <span class="floating-label">Combo</span>
+                                            <input type="text" name="combo" id="combo" class="inputText" placeholder="--Generate first--" readonly filled="false" value>
+                                        </div>
+                                        <svg class="copy" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="currentColor"><path d="M384 336H192c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16l140.1 0L400 115.9V320c0 8.8-7.2 16-16 16zM192 384H384c35.3 0 64-28.7 64-64V115.9c0-12.7-5.1-24.9-14.1-33.9L366.1 14.1c-9-9-21.2-14.1-33.9-14.1H192c-35.3 0-64 28.7-64 64V320c0 35.3 28.7 64 64 64zM64 128c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H256c35.3 0 64-28.7 64-64V416H272v32c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192c0-8.8 7.2-16 16-16H96V128H64z" /></svg>
+                                    </div>
+                                </div>
+                                <div class="skin">
+                                    <img src="/api/skin/?id=0000" alt="Generated Minecraft Account Skin">
+                                </div>
+                            </div>
+                            <div class="bottom-gen">
+                                <a href="generate.php" class="generateBtn">Generate Account</a>
+                                <div class="additional-info">
+                                    <div class="id">ID:<span>....</span></div>
+                                    <div class="cost">Cost:<span><img class="hunger_full hunger" src="/src/img/hunger.png" alt="Minecraft Hunger Full"><img class="hunger_full hunger" src="/src/img/hunger.png" alt="Minecraft Hunger Full"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-col">
+                        <div class="userinfo">
+                            <div class="rang">Rank:<span>Pro</span></div>
+                            <div class="credits">Generates:<span> <img class="hunger_full hunger" src="/src/img/hunger_empty.webp" alt="Minecraft Hunger Empty"> <img class="hunger_full hunger" src="/src/img/hunger_empty.webp" alt="Minecraft Hunger Empty"> <img class="hunger_full hunger" src="/src/img/hunger_empty.webp" alt="Minecraft Hunger Empty"> <img class="hunger_full hunger" src="/src/img/hunger_empty.webp" alt="Minecraft Hunger Empty"> <img class="hunger_full hunger" src="/src/img/hunger_empty.webp" alt="Minecraft Hunger Empty"> <img class="hunger_full hunger" src="/src/img/hunger_empty.webp" alt="Minecraft Hunger Empty"></span></div>
+                        </div>
+                        <div class="history">
+                            <div class="top">
+                                <h3>Your Account History</h3>
+                            </div>
+                            <div class="prev-accounts">
+                                <div class="prevAcc-container">
+                                    <div class="prevAcc">
+                                        <img src="/api/head/?id=8777" alt="Minecraft Alt Head Image" loading="lazy">
+                                        <div class="account">
+                                            <div class="name">
+                                                <h3>Aaan****</h3>
+                                            </div>
+                                            <div class="actions">
+                                                <div class="info">
+                                                    <p class="restore">Free</p>
+                                                    <p class="status active">Expired</p>
+                                                </div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="arrow-svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" fill="currentColor" /></svg>
+                                            </div>
+                                        </div>
+                                        <div class="arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="arrow-svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" fill="currentColor" /></svg>
+                                            <p class="load" id="load">Expand</p>
+                                        </div>
+                                    </div>
+                                    <div class="moredetail">
+                                        <div class="actioninfo">
+                                            <p>Status:</p>
+                                            <p>Expired</p>
+                                        </div>
+                                        <div class="pwinfo">
+                                            <p>ID:</p>
+                                            <p><span>8777</span></p>
+                                        </div>
+                                        <div><a href></a></div>
+                                        <div>
+                                            <div class="cost">
+                                                <p>Cost: <img class="hunger_full hunger" src="/src/img/hunger.webp" alt="Minecraft Hunger Full"></p>
+                                            </div>
+                                            <a href="/generator/free/restore.php?id=8777" class="exec"><span><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M246.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 109.3V320c0 17.7 14.3 32 32 32s32-14.3 32-32V109.3l73.4 73.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-128-128zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 53 43 96 96 96H352c53 0 96-43 96-96V352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V352z" /></svg></span>Restore</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="prevAcc-container">
+                                    <div class="prevAcc">
+                                        <img src="/api/head/?id=1255" alt="Minecraft Alt Head Image" loading="lazy">
+                                        <div class="account">
+                                            <div class="name">
+                                                <h3>Rupay****</h3>
+                                            </div>
+                                            <div class="actions">
+                                                <div class="info">
+                                                    <p class="restore">Free</p>
+                                                    <p class="status active">Expired</p>
+                                                </div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="arrow-svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" fill="currentColor" /></svg>
+                                            </div>
+                                        </div>
+                                        <div class="arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="arrow-svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" fill="currentColor" /></svg>
+                                            <p class="load" id="load">Expand</p>
+                                        </div>
+                                    </div>
+                                    <div class="moredetail">
+                                        <div class="actioninfo">
+                                            <p>Status:</p>
+                                            <p>Expired</p>
+                                        </div>
+                                        <div class="pwinfo">
+                                            <p>ID:</p>
+                                            <p><span>1255</span></p>
+                                        </div>
+                                        <div><a href></a></div>
+                                        <div>
+                                            <div class="cost">
+                                                <p>Cost: <img class="hunger_full hunger" src="/src/img/hunger.webp" alt="Minecraft Hunger Full"></p>
+                                            </div>
+                                            <a href="/generator/free/restore.php?id=1255" class="exec"><span><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M246.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 109.3V320c0 17.7 14.3 32 32 32s32-14.3 32-32V109.3l73.4 73.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-128-128zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 53 43 96 96 96H352c53 0 96-43 96-96V352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V352z" /></svg></span>Restore</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="prevAcc-container">
+                                    <div class="prevAcc">
+                                        <img src="/api/head/?id=3518" alt="Minecraft Alt Head Image" loading="lazy">
+                                        <div class="account">
+                                            <div class="name">
+                                                <h3>SG_M****</h3>
+                                            </div>
+                                            <div class="actions">
+                                                <div class="info">
+                                                    <p class="restore">Free</p>
+                                                    <p class="status active">Expired</p>
+                                                </div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="arrow-svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" fill="currentColor" /></svg>
+                                            </div>
+                                        </div>
+                                        <div class="arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="arrow-svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" fill="currentColor" /></svg>
+                                            <p class="load" id="load">Expand</p>
+                                        </div>
+                                    </div>
+                                    <div class="moredetail">
+                                        <div class="actioninfo">
+                                            <p>Status:</p>
+                                            <p>Expired</p>
+                                        </div>
+                                        <div class="pwinfo">
+                                            <p>ID:</p>
+                                            <p><span>3518</span></p>
+                                        </div>
+                                        <div><a href></a></div>
+                                        <div>
+                                            <div class="cost">
+                                                <p>Cost: <img class="hunger_full hunger" src="/src/img/hunger.webp" alt="Minecraft Hunger Full"></p>
+                                            </div>
+                                            <a href="/generator/free/restore.php?id=3518" class="exec"><span><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M246.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 109.3V320c0 17.7 14.3 32 32 32s32-14.3 32-32V109.3l73.4 73.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-128-128zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 53 43 96 96 96H352c53 0 96-43 96-96V352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V352z" /></svg></span>Restore</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="prevAcc-container">
+                                    <div class="prevAcc">
+                                        <img src="/api/head/?id=3419" alt="Minecraft Alt Head Image" loading="lazy">
+                                        <div class="account">
+                                            <div class="name">
+                                                <h3>Itz_A****</h3>
+                                            </div>
+                                            <div class="actions">
+                                                <div class="info">
+                                                    <p class="restore">Free</p>
+                                                    <p class="status active">Expired</p>
+                                                </div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="arrow-svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" fill="currentColor" /></svg>
+                                            </div>
+                                        </div>
+                                        <div class="arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="arrow-svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" fill="currentColor" /></svg>
+                                            <p class="load" id="load">Expand</p>
+                                        </div>
+                                    </div>
+                                    <div class="moredetail">
+                                        <div class="actioninfo">
+                                            <p>Status:</p>
+                                            <p>Expired</p>
+                                        </div>
+                                        <div class="pwinfo">
+                                            <p>ID:</p>
+                                            <p><span>3419</span></p>
+                                        </div>
+                                        <div><a href></a></div>
+                                        <div>
+                                            <div class="cost">
+                                                <p>Cost: <img class="hunger_full hunger" src="/src/img/hunger.webp" alt="Minecraft Hunger Full"></p>
+                                            </div>
+                                            <a href="/generator/free/restore.php?id=3419" class="exec"><span><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M246.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 109.3V320c0 17.7 14.3 32 32 32s32-14.3 32-32V109.3l73.4 73.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-128-128zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 53 43 96 96 96H352c53 0 96-43 96-96V352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V352z" /></svg></span>Restore</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="prevAcc-container">
+                                    <div class="prevAcc">
+                                        <img src="/api/head/?id=8721" alt="Minecraft Alt Head Image" loading="lazy">
+                                        <div class="account">
+                                            <div class="name">
+                                                <h3>Zeff****</h3>
+                                            </div>
+                                            <div class="actions">
+                                                <div class="info">
+                                                    <p class="restore">Free</p>
+                                                    <p class="status active">Expired</p>
+                                                </div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="arrow-svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" fill="currentColor" /></svg>
+                                            </div>
+                                        </div>
+                                        <div class="arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="arrow-svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" fill="currentColor" /></svg>
+                                            <p class="load" id="load">Expand</p>
+                                        </div>
+                                    </div>
+                                    <div class="moredetail">
+                                        <div class="actioninfo">
+                                            <p>Status:</p>
+                                            <p>Expired</p>
+                                        </div>
+                                        <div class="pwinfo">
+                                            <p>ID:</p>
+                                            <p><span>8721</span></p>
+                                        </div>
+                                        <div><a href></a></div>
+                                        <div>
+                                            <div class="cost">
+                                                <p>Cost: <img class="hunger_full hunger" src="/src/img/hunger.webp" alt="Minecraft Hunger Full"></p>
+                                            </div>
+                                            <a href="/generator/free/restore.php?id=8721" class="exec"><span><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M246.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 109.3V320c0 17.7 14.3 32 32 32s32-14.3 32-32V109.3l73.4 73.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-128-128zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 53 43 96 96 96H352c53 0 96-43 96-96V352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V352z" /></svg></span>Restore</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="prevAcc-container">
+                                    <div class="prevAcc">
+                                        <img src="/api/head/?id=3093" alt="Minecraft Alt Head Image" loading="lazy">
+                                        <div class="account">
+                                            <div class="name">
+                                                <h3>Mr_Gamer****</h3>
+                                            </div>
+                                            <div class="actions">
+                                                <div class="info">
+                                                    <p class="restore">Free</p>
+                                                    <p class="status active">Expired</p>
+                                                </div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="arrow-svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" fill="currentColor" /></svg>
+                                            </div>
+                                        </div>
+                                        <div class="arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="arrow-svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" fill="currentColor" /></svg>
+                                            <p class="load" id="load">Expand</p>
+                                        </div>
+                                    </div>
+                                    <div class="moredetail">
+                                        <div class="actioninfo">
+                                            <p>Status:</p>
+                                            <p>Expired</p>
+                                        </div>
+                                        <div class="pwinfo">
+                                            <p>ID:</p>
+                                            <p><span>3093</span></p>
+                                        </div>
+                                        <div><a href></a></div>
+                                        <div>
+                                            <div class="cost">
+                                                <p>Cost: <img class="hunger_full hunger" src="/src/img/hunger.webp" alt="Minecraft Hunger Full"></p>
+                                            </div>
+                                            <a href="/generator/free/restore.php?id=3093" class="exec"><span><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M246.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 109.3V320c0 17.7 14.3 32 32 32s32-14.3 32-32V109.3l73.4 73.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-128-128zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 53 43 96 96 96H352c53 0 96-43 96-96V352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V352z" /></svg></span>Restore</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="prevAcc-container">
+                                    <div class="prevAcc">
+                                        <img src="/api/head/?id=9011" alt="Minecraft Alt Head Image" loading="lazy">
+                                        <div class="account">
+                                            <div class="name">
+                                                <h3>NotR****</h3>
+                                            </div>
+                                            <div class="actions">
+                                                <div class="info">
+                                                    <p class="restore">Free</p>
+                                                    <p class="status active">Expired</p>
+                                                </div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="arrow-svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" fill="currentColor" /></svg>
+                                            </div>
+                                        </div>
+                                        <div class="arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="arrow-svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" fill="currentColor" /></svg>
+                                            <p class="load" id="load">Expand</p>
+                                        </div>
+                                    </div>
+                                    <div class="moredetail">
+                                        <div class="actioninfo">
+                                            <p>Status:</p>
+                                            <p>Expired</p>
+                                        </div>
+                                        <div class="pwinfo">
+                                            <p>ID:</p>
+                                            <p><span>9011</span></p>
+                                        </div>
+                                        <div><a href></a></div>
+                                        <div>
+                                            <div class="cost">
+                                                <p>Cost: <img class="hunger_full hunger" src="/src/img/hunger.webp" alt="Minecraft Hunger Full"></p>
+                                            </div>
+                                            <a href="/generator/free/restore.php?id=9011" class="exec"><span><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M246.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 109.3V320c0 17.7 14.3 32 32 32s32-14.3 32-32V109.3l73.4 73.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-128-128zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 53 43 96 96 96H352c53 0 96-43 96-96V352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V352z" /></svg></span>Restore</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="prevAcc-container">
+                                    <div class="prevAcc">
+                                        <img src="/api/head/?id=5261" alt="Minecraft Alt Head Image" loading="lazy">
+                                        <div class="account">
+                                            <div class="name">
+                                                <h3>Fo****</h3>
+                                            </div>
+                                            <div class="actions">
+                                                <div class="info">
+                                                    <p class="restore">Free</p>
+                                                    <p class="status active">Expired</p>
+                                                </div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="arrow-svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" fill="currentColor" /></svg>
+                                            </div>
+                                        </div>
+                                        <div class="arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="arrow-svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" fill="currentColor" /></svg>
+                                            <p class="load" id="load">Expand</p>
+                                        </div>
+                                    </div>
+                                    <div class="moredetail">
+                                        <div class="actioninfo">
+                                            <p>Status:</p>
+                                            <p>Expired</p>
+                                        </div>
+                                        <div class="pwinfo">
+                                            <p>ID:</p>
+                                            <p><span>5261</span></p>
+                                        </div>
+                                        <div><a href></a></div>
+                                        <div>
+                                            <div class="cost">
+                                                <p>Cost: <img class="hunger_full hunger" src="/src/img/hunger.webp" alt="Minecraft Hunger Full"></p>
+                                            </div>
+                                            <a href="/generator/free/restore.php?id=5261" class="exec"><span><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M246.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 109.3V320c0 17.7 14.3 32 32 32s32-14.3 32-32V109.3l73.4 73.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-128-128zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 53 43 96 96 96H352c53 0 96-43 96-96V352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V352z" /></svg></span>Restore</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="prevAcc-container">
+                                    <div class="prevAcc">
+                                        <img src="/api/head/?id=9732" alt="Minecraft Alt Head Image" loading="lazy">
+                                        <div class="account">
+                                            <div class="name">
+                                                <h3>Pzy_P****</h3>
+                                            </div>
+                                            <div class="actions">
+                                                <div class="info">
+                                                    <p class="restore">Free</p>
+                                                    <p class="status active">Expired</p>
+                                                </div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="arrow-svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" fill="currentColor" /></svg>
+                                            </div>
+                                        </div>
+                                        <div class="arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="arrow-svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" fill="currentColor" /></svg>
+                                            <p class="load" id="load">Expand</p>
+                                        </div>
+                                    </div>
+                                    <div class="moredetail">
+                                        <div class="actioninfo">
+                                            <p>Status:</p>
+                                            <p>Expired</p>
+                                        </div>
+                                        <div class="pwinfo">
+                                            <p>ID:</p>
+                                            <p><span>9732</span></p>
+                                        </div>
+                                        <div><a href></a></div>
+                                        <div>
+                                            <div class="cost">
+                                                <p>Cost: <img class="hunger_full hunger" src="/src/img/hunger.webp" alt="Minecraft Hunger Full"></p>
+                                            </div>
+                                            <a href="/generator/free/restore.php?id=9732" class="exec"><span><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M246.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 109.3V320c0 17.7 14.3 32 32 32s32-14.3 32-32V109.3l73.4 73.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-128-128zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 53 43 96 96 96H352c53 0 96-43 96-96V352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V352z" /></svg></span>Restore</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="prevAcc-container">
+                                    <div class="prevAcc">
+                                        <img src="/api/head/?id=7027" alt="Minecraft Alt Head Image" loading="lazy">
+                                        <div class="account">
+                                            <div class="name">
+                                                <h3>spo****</h3>
+                                            </div>
+                                            <div class="actions">
+                                                <div class="info">
+                                                    <p class="restore">Free</p>
+                                                    <p class="status active">Expired</p>
+                                                </div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="arrow-svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" fill="currentColor" /></svg>
+                                            </div>
+                                        </div>
+                                        <div class="arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="arrow-svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" fill="currentColor" /></svg>
+                                            <p class="load" id="load">Expand</p>
+                                        </div>
+                                    </div>
+                                    <div class="moredetail">
+                                        <div class="actioninfo">
+                                            <p>Status:</p>
+                                            <p>Expired</p>
+                                        </div>
+                                        <div class="pwinfo">
+                                            <p>ID:</p>
+                                            <p><span>7027</span></p>
+                                        </div>
+                                        <div><a href></a></div>
+                                        <div>
+                                            <div class="cost">
+                                                <p>Cost: <img class="hunger_full hunger" src="/src/img/hunger.webp" alt="Minecraft Hunger Full"></p>
+                                            </div>
+                                            <a href="/generator/free/restore.php?id=7027" class="exec"><span><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M246.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 109.3V320c0 17.7 14.3 32 32 32s32-14.3 32-32V109.3l73.4 73.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-128-128zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 53 43 96 96 96H352c53 0 96-43 96-96V352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V352z" /></svg></span>Restore</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="prevAcc-container">
+                                    <div class="prevAcc">
+                                        <img src="/api/head/?id=4441" alt="Minecraft Alt Head Image" loading="lazy">
+                                        <div class="account">
+                                            <div class="name">
+                                                <h3>Criminal****</h3>
+                                            </div>
+                                            <div class="actions">
+                                                <div class="info">
+                                                    <p class="restore">Free</p>
+                                                    <p class="status active">Expired</p>
+                                                </div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="arrow-svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" fill="currentColor" /></svg>
+                                            </div>
+                                        </div>
+                                        <div class="arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="arrow-svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" fill="currentColor" /></svg>
+                                            <p class="load" id="load">Expand</p>
+                                        </div>
+                                    </div>
+                                    <div class="moredetail">
+                                        <div class="actioninfo">
+                                            <p>Status:</p>
+                                            <p>Expired</p>
+                                        </div>
+                                        <div class="pwinfo">
+                                            <p>ID:</p>
+                                            <p><span>4441</span></p>
+                                        </div>
+                                        <div><a href></a></div>
+                                        <div>
+                                            <div class="cost">
+                                                <p>Cost: <img class="hunger_full hunger" src="/src/img/hunger.webp" alt="Minecraft Hunger Full"></p>
+                                            </div>
+                                            <a href="/generator/free/restore.php?id=4441" class="exec"><span><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M246.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 109.3V320c0 17.7 14.3 32 32 32s32-14.3 32-32V109.3l73.4 73.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-128-128zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 53 43 96 96 96H352c53 0 96-43 96-96V352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V352z" /></svg></span>Restore</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="prevAcc-container">
+                                    <div class="prevAcc">
+                                        <img src="/api/head/?id=8661" alt="Minecraft Alt Head Image" loading="lazy">
+                                        <div class="account">
+                                            <div class="name">
+                                                <h3>AaryanI****</h3>
+                                            </div>
+                                            <div class="actions">
+                                                <div class="info">
+                                                    <p class="restore">Free</p>
+                                                    <p class="status active">Expired</p>
+                                                </div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="arrow-svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" fill="currentColor" /></svg>
+                                            </div>
+                                        </div>
+                                        <div class="arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="arrow-svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" fill="currentColor" /></svg>
+                                            <p class="load" id="load">Expand</p>
+                                        </div>
+                                    </div>
+                                    <div class="moredetail">
+                                        <div class="actioninfo">
+                                            <p>Status:</p>
+                                            <p>Expired</p>
+                                        </div>
+                                        <div class="pwinfo">
+                                            <p>ID:</p>
+                                            <p><span>8661</span></p>
+                                        </div>
+                                        <div><a href></a></div>
+                                        <div>
+                                            <div class="cost">
+                                                <p>Cost: <img class="hunger_full hunger" src="/src/img/hunger.webp" alt="Minecraft Hunger Full"></p>
+                                            </div>
+                                            <a href="/generator/free/restore.php?id=8661" class="exec"><span><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M246.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 109.3V320c0 17.7 14.3 32 32 32s32-14.3 32-32V109.3l73.4 73.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-128-128zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 53 43 96 96 96H352c53 0 96-43 96-96V352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V352z" /></svg></span>Restore</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="prevAcc-container">
+                                    <div class="prevAcc">
+                                        <img src="/api/head/?id=1550" alt="Minecraft Alt Head Image" loading="lazy">
+                                        <div class="account">
+                                            <div class="name">
+                                                <h3>RideD****</h3>
+                                            </div>
+                                            <div class="actions">
+                                                <div class="info">
+                                                    <p class="restore">Gamepass</p>
+                                                    <p class="status active">Expired</p>
+                                                </div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="arrow-svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" fill="currentColor" /></svg>
+                                            </div>
+                                        </div>
+                                        <div class="arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="arrow-svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" fill="currentColor" /></svg>
+                                            <p class="load" id="load">Expand</p>
+                                        </div>
+                                    </div>
+                                    <div class="moredetail">
+                                        <div class="actioninfo">
+                                            <p>Status:</p>
+                                            <p>Expired</p>
+                                        </div>
+                                        <div class="pwinfo">
+                                            <p>ID:</p>
+                                            <p><span>1550</span></p>
+                                        </div>
+                                        <div><a href></a></div>
+                                        <div>
+                                            <div class="cost">
+                                                <p>Cost: <img class="hunger_full hunger" src="/src/img/hunger.webp" alt="Minecraft Hunger Full"><img class="hunger_full hunger" src="/src/img/hunger.webp" alt="Minecraft Hunger Full"></p>
+                                            </div>
+                                            <a href="/generator/gamepass/restore.php?id=1550" class="exec"><span><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M246.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 109.3V320c0 17.7 14.3 32 32 32s32-14.3 32-32V109.3l73.4 73.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-128-128zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 53 43 96 96 96H352c53 0 96-43 96-96V352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V352z" /></svg></span>Restore</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="prevAcc-container">
+                                    <div class="prevAcc">
+                                        <img src="/api/head/?id=1190" alt="Minecraft Alt Head Image" loading="lazy">
+                                        <div class="account">
+                                            <div class="name">
+                                                <h3>ItLu****</h3>
+                                            </div>
+                                            <div class="actions">
+                                                <div class="info">
+                                                    <p class="restore">Free</p>
+                                                    <p class="status active">Expired</p>
+                                                </div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="arrow-svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" fill="currentColor" /></svg>
+                                            </div>
+                                        </div>
+                                        <div class="arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="arrow-svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" fill="currentColor" /></svg>
+                                            <p class="load" id="load">Expand</p>
+                                        </div>
+                                    </div>
+                                    <div class="moredetail">
+                                        <div class="actioninfo">
+                                            <p>Status:</p>
+                                            <p>Expired</p>
+                                        </div>
+                                        <div class="pwinfo">
+                                            <p>ID:</p>
+                                            <p><span>1190</span></p>
+                                        </div>
+                                        <div><a href></a></div>
+                                        <div>
+                                            <div class="cost">
+                                                <p>Cost: <img class="hunger_full hunger" src="/src/img/hunger.webp" alt="Minecraft Hunger Full"></p>
+                                            </div>
+                                            <a href="/generator/free/restore.php?id=1190" class="exec"><span><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M246.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 109.3V320c0 17.7 14.3 32 32 32s32-14.3 32-32V109.3l73.4 73.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-128-128zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 53 43 96 96 96H352c53 0 96-43 96-96V352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V352z" /></svg></span>Restore</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="prevAcc-container">
+                                    <div class="prevAcc">
+                                        <img src="/api/head/?id=7390" alt="Minecraft Alt Head Image" loading="lazy">
+                                        <div class="account">
+                                            <div class="name">
+                                                <h3>claptom_****</h3>
+                                            </div>
+                                            <div class="actions">
+                                                <div class="info">
+                                                    <p class="restore">Free</p>
+                                                    <p class="status active">Expired</p>
+                                                </div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="arrow-svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" fill="currentColor" /></svg>
+                                            </div>
+                                        </div>
+                                        <div class="arrow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="arrow-svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" fill="currentColor" /></svg>
+                                            <p class="load" id="load">Expand</p>
+                                        </div>
+                                    </div>
+                                    <div class="moredetail">
+                                        <div class="actioninfo">
+                                            <p>Status:</p>
+                                            <p>Expired</p>
+                                        </div>
+                                        <div class="pwinfo">
+                                            <p>ID:</p>
+                                            <p><span>7390</span></p>
+                                        </div>
+                                        <div><a href></a></div>
+                                        <div>
+                                            <div class="cost">
+                                                <p>Cost: <img class="hunger_full hunger" src="/src/img/hunger.webp" alt="Minecraft Hunger Full"></p>
+                                            </div>
+                                            <a href="/generator/free/restore.php?id=7390" class="exec"><span><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M246.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 109.3V320c0 17.7 14.3 32 32 32s32-14.3 32-32V109.3l73.4 73.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-128-128zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 53 43 96 96 96H352c53 0 96-43 96-96V352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V352z" /></svg></span>Restore</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="/generator/?import" class="addacc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M352 96l64 0c17.7 0 32 14.3 32 32l0 256c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l64 0c53 0 96-43 96-96l0-256c0-53-43-96-96-96l-64 0c-17.7 0-32 14.3-32 32s14.3 32 32 32zm-9.4 182.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L242.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l210.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" fill="currentColor" /></svg> Import Account
+</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="faq" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <h3>Frequently Asked Questions</h3>
+                    <p>If you have any questions about our gamepass account generator, this may help.</p>
+                </div>
+                <div class="wrapper">
+                    <div class="parent-tab">
+                        <label for="tab-1">
+<span>Is this free to use?</span>
+<div class="icon">
+<i class="openclose" aria-hidden="true">
+</i>
+</div>
+</label>
+                        <div class="content">
+                            <p>Yes, our generator is entirely free! These accounts are perfect to play on small servers, between friends or in singleplayer.</p>
+                        </div>
+                    </div>
+                    <div class="parent-tab">
+                        <label for="tab-2">
+<span>How many accounts can I generate per day?</span>
+<div class="icon">
+<i class="openclose" aria-hidden="true">
+</i>
+</div>
+</label>
+                        <div class="content">
+                            <p>You get 3 generates per day, which is enough for every day use, if you need more, you can get pro for free which has 6 generates and access to all generators.</p>
+                        </div>
+                    </div>
+                    <div class="parent-tab">
+                        <label for="tab-3">
+<span>Are the accounts private?</span>
+<div class="icon">
+<i class="openclose" aria-hidden="true">
+</i>
+</div>
+</label>
+                        <div class="content">
+                            <p>The accounts are not private, someone else can play on the same account. If you need an account that is more private, you can use the premium or gamepass generator where accounts are only shared with people on the same rank.</p>
+                        </div>
+                    </div>
+                    <div class="parent-tab">
+                        <label for="tab-4">
+<span>Can I change the mail or the password?</span>
+<div class="icon">
+<i class="openclose" aria-hidden="true">
+</i>
+</div>
+</label>
+                        <div class="content">
+                            <p>No you cannot, the accounts are meant to be shared so we can stay a free platform, we can't provide a personnal account for everyone hence why we have to share them.<br>But we do private full access account giveaways on our
+                                instagram and discord.</p>
+                        </div>
+                    </div>
+                    <div class="parent-tab">
+                        <label for="tab-5">
+<span>Can I change my skin?</span>
+<div class="icon">
+<i class="openclose" aria-hidden="true">
+</i>
+</div>
+</label>
+                        <div class="content">
+                            <p>Yes you absolutely can, you can either change it from the official Minecraft website or from the official launcher. This can be done every 30 days for each account.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="resources">
+        <div class="container">
+            <div class="logo">
+                <a href="/" class="cc">
+<img alt="Free Minecraft Account Generator Icon" src="/src/img/icon.webp"> McAlts.net
+</a>
+                <div class="copyright">Copyright © 2023 McAlts.net</div>
+            </div>
+            <div class="quick-links">
+                <div class="links-group">
+                    <span>Pages</span>
+                    <div>
+                        <a href="/">Home</a>
+                        <a href="/full-access">Full Access</a>
+                        <a href="/pro">Pro</a>
+                    </div>
+                </div>
+                <div class="links-group">
+                    <span>Generators</span>
+                    <div>
+                        <a href="/generator/free">Free</a>
+                        <a href="/generator/premium">Premium</a>
+                        <a href="/generator/gamepass">Gamepass</a>
+                    </div>
+                </div>
+                <div class="links-group">
+                    <span>Legal</span>
+                    <div>
+                        <a href="/terms-of-service">Terms of Service</a>
+                        <a href="/privacy-policy">Privacy Policy</a>
+                        <a href="/disclaimer">Disclaimer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="social-media" id="social-media-bottom">
+                <a href="https://discord.gg/mcalts" target="_blank">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z" fill="currentColor" /></svg>
+</a>
+                <a href="https://www.youtube.com/@McAltsNet" target="_blank">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" fill="currentColor" /></svg>
+</a>
+                <a href="https://www.instagram.com/mcaltsnet/" target="_blank">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" fill="currentColor" /></svg>
+</a>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="/src/js/script.js"></script>
+    <script type="text/javascript" src="/src/js/generator.js"></script>
+    <script>
+        var copyDiv = document.getElementsByClassName("credentials")[0].getElementsByClassName("credential");
+        Array.from(copyDiv).forEach(element => {
+            var copyContent = element.getElementsByClassName("inputText")[0];
+            element.getElementsByClassName("copy")[0].addEventListener("click", function() {
+                if (copyContent.getAttribute("value").length > 0) {
+
+                    element.getElementsByClassName("inputText")[0].select();
+                    document.execCommand("copy");
+                    showAlert("Data successfully copied!");
+                } else {
+                    showAlert("Generate an account first!");
+                }
+            });
+        });
+
+        function openPopup() {
+            document.getElementById("popup").style.display = "flex";
+        }
+    </script>
+</body>
+
+</html>

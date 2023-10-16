@@ -1,0 +1,732 @@
+:root {
+    --invert: #141316;
+}
+
+.lightmode {
+    --invert: #fff;
+}
+
+.main {
+    background-color: var(--bgDark);
+}
+
+.generator {
+    background-color: var(--bgDark);
+    padding-bottom: 50px;
+    border-bottom: 1px solid var(--light);
+}
+
+.generator .section-header {
+    padding: 30px 0 30px;
+}
+
+.generator .section-header h1 {
+    font-size: 2.5em;
+}
+
+.generator .section-header p {
+    margin-top: 0;
+}
+
+.generator-content {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.arrow-svg {
+    height: 1em;
+}
+
+.choose-generator {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex: 0.6;
+}
+
+.choose-generator .top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 1.5em;
+    font-weight: 300;
+    height: 55px;
+    border-radius: 8px 8px 0 0;
+    color: var(--landingtext);
+    width: 100%;
+    flex-basis: 55px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: var(--bgDark);
+    border-radius: 0 0 8px 8px;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 15px 30px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: var(--light);
+    cursor: pointer;
+    transition: 0.2s all;
+    flex: 1;
+    position: relative;
+}
+
+.option:hover {
+    box-shadow: inset 0 0 0 2px var(--main), inset 0 0 20px #0070FF33;
+}
+
+.option svg {
+    color: var(--landingtext);
+    transition: margin 0.3s ease-out 0s;
+}
+
+.option:hover svg {
+    margin-right: 10px;
+}
+
+.option .ico {
+    position: absolute;
+    width: 30px;
+    top: 25px;
+    right: 30px;
+}
+
+.option .name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.option .gen-icon {
+    margin-right: 10px;
+}
+
+.option .gen-icon img {
+    height: 60px;
+}
+
+.option .description p {
+    color: var(--main);
+}
+
+.option .info {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.option .info p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.option .info p span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.option .info div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.option .info span {
+    color: var(--landingtext);
+}
+
+.right-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex: 0.4;
+}
+
+.userinfo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: 100%;
+    padding-bottom: 15px;
+    gap: 10px;
+}
+
+.userinfo>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: max-content;
+    height: 40px;
+    border-radius: 8px;
+    background-color: var(--light);
+    color: var(--secondaryText);
+    padding: 0 10px;
+    gap: 7px;
+}
+
+.userinfo>div span {
+    color: var(--landingtext);
+}
+
+.credits span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.history {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+.history .prev-accounts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    margin-top: 15px;
+    border-radius: 8px;
+    background-color: var(--light);
+    padding: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.prevAcc {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+    height: 60px;
+    cursor: pointer;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.prevAcc-container:hover {
+    box-shadow: inset 0 0 0 2px var(--main), inset 0 0 20px #0070FF33;
+}
+
+.prevAcc .arrow svg {
+    transition: margin 0.4s ease-out, transform 0.1s ease-out;
+}
+
+.prevAcc-container:hover .arrow svg {
+    margin-right: 10px;
+}
+
+.prevAcc-container:hover .arrow #load {
+    color: var(--main);
+}
+
+.prevAcc img {
+    height: 60px;
+    border-radius: 8px;
+    margin-right: 5px;
+}
+
+.prevAcc .account {
+    height: 100%;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.prevAcc .account .name h3 {
+    color: var(--landingtext);
+    max-width: 170px;
+}
+
+.prevAcc .account .actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.prevAcc .account .actions .info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.prevAcc .account .actions .restore {
+    color: var(--landingtext);
+    background-color: var(--light);
+    padding: 0px 5px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.prevAcc .account .actions .status {
+    color: var(--invert);
+    background-color: var(--landingtext);
+    padding: 0px 5px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.prevAcc .account .actions .active {
+    color: white;
+    background-color: var(--main);
+}
+
+.prevAcc .account .actions svg {
+    display: none;
+}
+
+.prevAcc .arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    padding-top: 5px;
+}
+
+.prevAcc .arrow svg {
+    color: var(--landingtext);
+}
+
+.prevAcc .arrow #load {
+    color: var(--secondaryText);
+}
+
+.prevAcc-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 80px;
+    padding: 10px 20px 10px 10px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    background-color: var(--bgDark);
+    transition: height 0.3s ease-out;
+    cursor: pointer;
+}
+
+.prevAcc-container:focus {
+    height: max-content;
+}
+
+.prevAcc-container:focus .moredetail {
+    height: fit-content;
+}
+
+.moredetail {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow: hidden;
+    flex: 1;
+    padding: 8px 0 0 0;
+    margin: 12px 0 0 0;
+    border-top: 2px solid var(--light);
+}
+
+.moredetail>div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.moredetail>div p span {
+    color: var(--main);
+}
+
+.actioninfo p:last-child {
+    color: var(--landingtext);
+}
+
+.moredetail>div:last-child {
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.cost p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--secondaryText);
+}
+
+.cost p img {
+    width: 20px;
+    margin-left: 5px;
+}
+
+.moredetail .exec {
+    background-color: var(--main);
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    cursor: pointer;
+    fill: #fff;
+}
+
+.moredetail .exec:hover {
+    background-color: var(--landingtext);
+    color: var(--invert);
+    fill: var(--invert);
+}
+
+.moredetail .exec span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.moredetail .exec svg {
+    fill: inherit;
+    margin-right: 5px;
+    height: 14px;
+    transition: fill 0.3s ease;
+}
+
+.addacc {
+    color: var(--secondaryText);
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.addacc:hover {
+    color: var(--landingtext);
+}
+
+.addacc svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+}
+
+.hunger {
+    width: 18px;
+}
+
+#popup {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #0008;
+    z-index: 9999;
+}
+
+.top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+}
+
+.top button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.top svg {
+    fill: var(--secondaryText);
+    color: var(--secondaryText);
+    height: 20px;
+}
+
+.top svg:hover {
+    fill: var(--main);
+    color: var(--main);
+    height: 20px;
+}
+
+.popup-content {
+    background-color: var(--light);
+    border-radius: 8px;
+    z-index: 100;
+    padding: 30px;
+    box-shadow: 0 0 40px #00000077;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 90%;
+    max-width: 600px;
+}
+
+.popup-header {
+    flex: 1;
+    width: 100%;
+    text-align: left;
+}
+
+.popup-header h3 {
+    margin-bottom: 5px;
+}
+
+.popup-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.popup-buttons a {
+    padding: 10px 20px;
+    height: 40px;
+    border-radius: 8px;
+    border: 0;
+    outline: 0;
+    background-color: var(--bgDark);
+    color: var(--landingtext);
+    cursor: pointer;
+    width: 100%;
+    transition: scale 0.2s ease;
+    text-align: center;
+}
+
+.popup-buttons a:hover {
+    scale: 1.02;
+}
+
+.popup-buttons input {
+    padding: 10px 20px;
+    height: 40px;
+    border-radius: 8px;
+    border: 0;
+    outline: 0;
+    background-color: var(--bgDark);
+    color: var(--landingtext);
+    width: 100%;
+    text-align: left;
+}
+
+.popup-buttons button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    height: 40px;
+    border-radius: 8px;
+    border: 0;
+    outline: 0;
+    background-color: var(--bgDark);
+    color: var(--landingtext);
+    cursor: pointer;
+    width: 100%;
+    transition: scale 0.2s ease;
+    text-align: center;
+}
+
+.popup-buttons button:hover {
+    scale: 1.02;
+}
+
+.popup-buttons p {
+    width: 100%;
+    text-align: center;
+    color: var(--landingtext);
+    padding: 5px 0;
+    font-size: 0.7em;
+}
+
+.popup-buttons a:first-child {
+    background-color: var(--main);
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1350px) {
+    .history {
+        height: calc(100% - 55px);
+    }
+    .generator-content {
+        max-height: 650px;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .generator-content {
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    .history {
+        margin-top: 20px;
+    }
+    .userinfo {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .choose-generator .top {
+        font-size: 16px;
+        height: 40px;
+        flex-basis: 40px;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .option .ico {
+        display: none;
+    }
+    .gen-icon {
+        min-width: 60px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .prevAcc .arrow #load {
+        display: none;
+    }
+    .prevAcc .arrow {
+        display: none;
+    }
+    .prevAcc .account {
+        width: 100%;
+    }
+    .prevAcc .account .actions svg {
+        display: block;
+        color: var(--landingtext);
+    }
+    .history {
+        align-items: center;
+    }
+    .userinfo {
+        flex-direction: column;
+    }
+    .userinfo>div {
+        padding: 0 15px;
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .history .prev-accounts {
+        padding: 10px;
+    }
+    .container {
+        width: 95%;
+    }
+    .prevAcc .account .name h3 {
+        font-size: 13px;
+    }
+    .prevAcc .account {
+        padding: 0;
+    }
+    .prevAcc img {
+        height: 40px;
+        margin-right: 2px;
+    }
+    .prevAcc {
+        height: 40px;
+        align-items: unset;
+    }
+    .prevAcc .account .actions .restore,
+    .prevAcc .account .actions .status {
+        font-size: 12px;
+        border-radius: 5px;
+    }
+    .prev-accounts .addacc {
+        font-size: 14px;
+    }
+    .rang {
+        font-size: 14px;
+    }
+    .userinfo {
+        gap: 5px
+    }
+    p {
+        font-size: 14px;
+    }
+    .option {
+        padding: 15px 20px;
+    }
+    .option .info div {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0;
+    }
+    .prevAcc-container {
+        height: 60px;
+    }
+}
